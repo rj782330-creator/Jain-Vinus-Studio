@@ -4,17 +4,20 @@ name: Deploy or Build
 on:
   push:
     branches: [ main ]
-
 env:
-  ACTIONS_RUNNER_FORCE_NODE24_WARNING: false
-
+  ACTIONS_RUNNER_FORCE_ACTIONS_NODE_VERSION: node20
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-artifact@v4
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4.6.1
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
