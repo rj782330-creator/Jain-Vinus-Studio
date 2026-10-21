@@ -1,11 +1,20 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+name: Deploy or Build
 
 on:
-  # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
+    branches: [ main ]
 
+env:
+  ACTIONS_RUNNER_FORCE_NODE24_WARNING: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-artifact@v4
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
