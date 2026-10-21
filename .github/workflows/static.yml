@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 env:
-  ACTIONS_RUNNER_FORCE_ACTIONS_NODE_VERSION: node22
+  ACTIONS_RUNNER_FORCE_ACTIONS_NODE_VERSION: node20
 
 permissions:
   contents: read
