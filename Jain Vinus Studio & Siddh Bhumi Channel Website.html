@@ -1,0 +1,1617 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAIN VINUS STUDIO | Siddh Bhumi Channel - Sammed Shikherjee (Madhuban)</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@700&family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        studioBlack: '#070709',
+                        studioCard: '#111116',
+                        studioRed: '#E50914',
+                        studioRedDark: '#B80710',
+                        siddhGold: '#F59E0B',
+                        siddhGoldLight: '#FDE68A',
+                        siddhAmber: '#D97706'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Bebas Neue', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                        script: ['Dancing Script', 'cursive']
+                    },
+                    boxShadow: {
+                        'red-glow': '0 0 25px rgba(229, 9, 20, 0.45)',
+                        'gold-glow': '0 0 30px rgba(245, 158, 11, 0.35)',
+                        'insta-glow': '0 0 30px rgba(217, 70, 239, 0.4)'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #070709;
+            color: #f3f4f6;
+            overflow-x: hidden;
+        }
+
+        /* Custom Red Block Highlight inspired by Jain Vinus Studio Banner */
+        .vinus-red-block {
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+        }
+        .vinus-red-block::before {
+            content: '';
+            position: absolute;
+            right: -8px;
+            top: -6px;
+            width: 58%;
+            height: 75%;
+            background-color: #E50914;
+            z-index: -1;
+            border-radius: 2px;
+        }
+
+        .studio-red-underblock {
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+        }
+        .studio-red-underblock::before {
+            content: '';
+            position: absolute;
+            left: -14px;
+            bottom: 4px;
+            width: 72%;
+            height: 55%;
+            background-color: #E50914;
+            z-index: -1;
+            border-radius: 2px;
+        }
+
+        /* Book Now Red Tag Block */
+        .book-now-block {
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+        }
+        .book-now-block::before {
+            content: '';
+            position: absolute;
+            right: -6px;
+            top: -5px;
+            width: 48%;
+            height: 65%;
+            background-color: #E50914;
+            z-index: -1;
+            border-radius: 2px;
+        }
+
+        /* Animated Notification Bell */
+        @keyframes bellRing {
+            0%, 100% { transform: rotate(0deg); }
+            15% { transform: rotate(16deg); }
+            30% { transform: rotate(-14deg); }
+            45% { transform: rotate(12deg); }
+            60% { transform: rotate(-10deg); }
+            75% { transform: rotate(6deg); }
+        }
+        .bell-animate {
+            animation: bellRing 2.5s infinite ease-in-out;
+            transform-origin: top center;
+        }
+
+        /* Diya Flame Flicker */
+        @keyframes flameFlicker {
+            0%, 100% { transform: scaleY(1) rotate(-1deg); opacity: 0.95; }
+            50% { transform: scaleY(1.12) rotate(2deg); opacity: 1; }
+        }
+        .flame-flicker {
+            animation: flameFlicker 1.4s infinite ease-in-out;
+            transform-origin: bottom center;
+        }
+
+        /* Brush Stroke Background Effect */
+        .brush-gold {
+            background: linear-gradient(90deg, #f59e0b 0%, #fbbf24 50%, #d97706 100%);
+            clip-path: polygon(2% 8%, 98% 0%, 100% 88%, 95% 98%, 0% 92%, 1% 25%);
+        }
+        .brush-red {
+            background: linear-gradient(90deg, #b91c1c 0%, #e50914 50%, #991b1b 100%);
+            clip-path: polygon(0% 10%, 97% 2%, 100% 90%, 3% 98%);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #070709;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #E50914;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #F59E0B;
+        }
+
+        /* Glassmorphism */
+        .glass-panel {
+            background: rgba(17, 17, 22, 0.82);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-studioRed selection:text-white">
+
+    <!-- Top Quick Contact Bar -->
+    <div class="bg-gradient-to-r from-black via-zinc-900 to-black border-b border-zinc-800/80 text-xs sm:text-sm py-2 px-4">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+            <div class="flex items-center space-x-3 text-zinc-300">
+                <span class="inline-flex items-center text-siddhGold font-medium">
+                    <i class="fa-solid fa-location-dot text-studioRed mr-1.5"></i>
+                    Main Road, Opp - Gunayatan, Sammed Shikherjee (Madhuban) 825329
+                </span>
+            </div>
+            <div class="flex items-center space-x-4 ml-auto">
+                <a href="tel:+916202486528" class="hover:text-siddhGold transition flex items-center gap-1.5 font-semibold">
+                    <i class="fa-solid fa-phone-volume text-studioRed"></i> +91 6202486528
+                </a>
+                <span class="text-zinc-600">|</span>
+                <a href="tel:+918210892001" class="hover:text-siddhGold transition flex items-center gap-1.5 font-semibold">
+                    <i class="fa-solid fa-phone text-studioRed"></i> 8210892001
+                </a>
+                <div class="hidden md:flex items-center space-x-2 pl-2 border-l border-zinc-800">
+                    <a href="#siddh-bhumi" class="w-6 h-6 rounded-full bg-blue-600/20 text-blue-400 hover:bg-blue-600 hover:text-white flex items-center justify-center transition" title="Facebook">
+                        <i class="fa-brands fa-facebook-f text-xs"></i>
+                    </a>
+                    <a href="#siddh-bhumi" class="w-6 h-6 rounded-full bg-pink-600/20 text-pink-400 hover:bg-pink-600 hover:text-white flex items-center justify-center transition" title="Instagram @SIDDH_BHUMI">
+                        <i class="fa-brands fa-instagram text-xs"></i>
+                    </a>
+                    <a href="#siddh-bhumi" class="w-6 h-6 rounded-full bg-red-600/20 text-red-500 hover:bg-red-600 hover:text-white flex items-center justify-center transition" title="YouTube Siddh Bhumi Channel">
+                        <i class="fa-brands fa-youtube text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Sticky Header / Navigation -->
+    <header class="sticky top-0 z-50 glass-panel border-b border-zinc-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo (Recreated from top-left golden camera logo + Jain Vinus Studio typography) -->
+            <a href="#home" class="flex items-center gap-3 group">
+                <div class="relative w-12 h-12 rounded-xl bg-zinc-900 border border-siddhGold/50 flex items-center justify-center shadow-gold-glow group-hover:border-siddhGold transition">
+                    <!-- Custom Golden Camera SVG matching card logo -->
+                    <svg class="w-8 h-8 text-siddhGold" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 20C8 16.6863 10.6863 14 14 14H20L24 8H40L44 14H50C53.3137 14 56 16.6863 56 20V48C56 51.3137 53.3137 54 50 54H14C10.6863 54 8 51.3137 8 48V20Z" stroke="currentColor" stroke-width="3.5"/>
+                        <circle cx="32" cy="34" r="12" stroke="currentColor" stroke-width="3.5"/>
+                        <circle cx="32" cy="34" r="5" fill="#E50914"/>
+                        <circle cx="47" cy="22" r="2.5" fill="currentColor"/>
+                    </svg>
+                    <span class="absolute -bottom-1 -right-1 w-3.5 h-3.5 bg-studioRed rounded-full border-2 border-black"></span>
+                </div>
+                <div>
+                    <div class="flex items-center gap-1.5">
+                        <span class="font-heading font-black text-xl sm:text-2xl tracking-wider text-white">JAIN</span>
+                        <span class="font-heading font-black text-xl sm:text-2xl tracking-wider text-white bg-studioRed px-2 py-0.5 rounded">VINUS</span>
+                        <span class="font-heading font-bold text-lg sm:text-xl tracking-widest text-siddhGold">STUDIO</span>
+                    </div>
+                    <p class="text-[11px] text-zinc-400 tracking-wide flex items-center gap-1">
+                        <span class="w-2 h-2 rounded-full bg-siddhGold inline-block"></span>
+                        Sammed Shikherjee (Madhuban) • Siddh Bhumi Channel
+                    </p>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden lg:flex items-center space-x-7 text-sm font-medium text-zinc-300">
+                <a href="#home" class="hover:text-white hover:text-siddhGold transition">Home</a>
+                <a href="#services" class="hover:text-white hover:text-siddhGold transition">Services</a>
+                <a href="#portfolio" class="hover:text-white hover:text-siddhGold transition">Portfolio</a>
+                <a href="#siddh-bhumi" class="flex items-center gap-1.5 text-siddhGold hover:text-siddhGoldLight font-semibold transition">
+                    <i class="fa-brands fa-youtube text-studioRed"></i> Siddh Bhumi Channel
+                </a>
+                <a href="#about" class="hover:text-white hover:text-siddhGold transition">About Us</a>
+                <a href="#book-now" class="bg-studioRed hover:bg-studioRedDark text-white font-bold px-5 py-2.5 rounded-lg shadow-red-glow transition transform hover:-translate-y-0.5 flex items-center gap-2">
+                    <i class="fa-solid fa-calendar-check"></i> BOOK NOW
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Trigger -->
+            <div class="flex items-center gap-2 lg:hidden">
+                <a href="#book-now" class="bg-studioRed text-white text-xs font-bold px-3.5 py-2 rounded-lg shadow-red-glow">
+                    BOOK NOW
+                </a>
+                <button id="mobileMenuBtn" class="p-2.5 rounded-lg bg-zinc-900 border border-zinc-700 text-zinc-200 hover:text-siddhGold focus:outline-none" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars text-xl" id="mobileMenuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-zinc-950/95 border-b border-zinc-800 px-4 pt-3 pb-6 space-y-3">
+            <a href="#home" class="mobile-nav-link block py-2 px-3 rounded-lg hover:bg-zinc-900 text-zinc-200 font-medium">Home</a>
+            <a href="#services" class="mobile-nav-link block py-2 px-3 rounded-lg hover:bg-zinc-900 text-zinc-200 font-medium">Services (LED Wall, Drone, Wedding)</a>
+            <a href="#portfolio" class="mobile-nav-link block py-2 px-3 rounded-lg hover:bg-zinc-900 text-zinc-200 font-medium">Visual Portfolio</a>
+            <a href="#siddh-bhumi" class="mobile-nav-link block py-2 px-3 rounded-lg bg-siddhGold/10 border border-siddhGold/30 text-siddhGold font-semibold">
+                <i class="fa-brands fa-youtube text-studioRed mr-1.5"></i> Siddh Bhumi Channel & QR Codes
+            </a>
+            <a href="#about" class="mobile-nav-link block py-2 px-3 rounded-lg hover:bg-zinc-900 text-zinc-200 font-medium">About Us & Contact</a>
+            <div class="pt-2 flex flex-col sm:flex-row gap-2">
+                <a href="tel:+916202486528" class="flex-1 bg-zinc-800 hover:bg-zinc-700 text-center py-2.5 rounded-lg font-semibold text-white">
+                    <i class="fa-solid fa-phone text-studioRed mr-1.5"></i> Call +91 6202486528
+                </a>
+                <a href="#book-now" class="mobile-nav-link flex-1 bg-studioRed text-center py-2.5 rounded-lg font-bold text-white">
+                    <i class="fa-solid fa-bolt mr-1.5"></i> Book Studio Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION (Inspired directly by the Jain Vinus Studio Banner Card) -->
+    <section id="home" class="relative overflow-hidden py-12 lg:py-20 border-b border-zinc-800/80">
+        <!-- Ambient Background Spotlights -->
+        <div class="absolute top-0 right-1/4 w-96 h-96 bg-studioRed/15 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-10 w-80 h-80 bg-siddhGold/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                
+                <!-- Left Column: 4-Panel Visual Showcase + Siddh Bhumi Emblem (Matching Left Side of Studio Banner) -->
+                <div class="lg:col-span-5 space-y-3.5 order-2 lg:order-1">
+                    <div class="bg-zinc-900/90 border border-zinc-800 p-3.5 rounded-2xl shadow-2xl space-y-3 relative">
+                        <!-- Top Mini Badge -->
+                        <div class="flex items-center justify-between px-1">
+                            <span class="text-xs uppercase tracking-widest text-siddhGold font-bold flex items-center gap-1.5">
+                                <span class="w-2 h-2 rounded-full bg-studioRed animate-ping"></span>
+                                Studio Production Gear & Stage
+                            </span>
+                            <span class="text-[11px] text-zinc-400">Shikharjee, Madhuban</span>
+                        </div>
+
+                        <!-- Strip 1: Bollywood Night / Rajdarbar LED Stage -->
+                        <div class="relative h-28 rounded-xl overflow-hidden border border-emerald-500/40 group">
+                            <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=900&q=80" 
+                                 onerror="this.src='https://placehold.co/800x250/111116/F59E0B?text=BOLLYWOOD+NIGHT+LED+STAGE'"
+                                 alt="Bollywood Night LED Stage" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 brightness-75">
+                            <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent flex items-center px-4">
+                                <div class="border-2 border-emerald-400/80 bg-red-950/80 px-3.5 py-1.5 rounded shadow-lg">
+                                    <p class="text-[10px] tracking-widest text-amber-200 uppercase font-bold">Rajdarbar Stage & Backdrop</p>
+                                    <h3 class="font-display text-2xl tracking-wider text-amber-300 leading-none">BOLLYWOOD NIGHT</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Strip 2: Siddh Bhumi Emblem + 4K Aerial Drone -->
+                        <div class="grid grid-cols-12 gap-2.5 items-center">
+                            <!-- Siddh Bhumi Sunset Mountain Logo Card -->
+                            <a href="#siddh-bhumi" class="col-span-4 h-28 rounded-xl bg-gradient-to-b from-zinc-950 to-black border border-siddhGold/40 p-2 flex flex-col items-center justify-center text-center group hover:border-siddhGold transition">
+                                <div class="w-12 h-12 rounded-full bg-gradient-to-b from-amber-400 via-orange-500 to-amber-900 flex items-center justify-center relative overflow-hidden shadow-md">
+                                    <!-- Mountain & Birds Silhouette -->
+                                    <svg class="w-10 h-10 text-black" viewBox="0 0 64 64" fill="currentColor">
+                                        <path d="M4 52L22 26L34 40L44 28L60 52H4Z" />
+                                        <path d="M22 16C24 14 26 14 28 16C30 14 32 14 34 16" stroke="#000" stroke-width="2" fill="none"/>
+                                    </svg>
+                                </div>
+                                <p class="mt-1.5 text-[11px] font-extrabold leading-tight text-white">
+                                    siddh <span class="text-siddhGold">BHUMI</span>
+                                </p>
+                                <p class="text-[9px] text-zinc-400 leading-tight">channel Shikharjee madhuban</p>
+                            </a>
+
+                            <!-- Drone Image Strip -->
+                            <div class="col-span-8 relative h-28 rounded-xl overflow-hidden border border-zinc-700/80 group">
+                                <img src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=800&q=80" 
+                                     onerror="this.src='https://placehold.co/600x250/111116/ffffff?text=4K+DRONE+COVERAGE'"
+                                     alt="4K Aerial Drone" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-3">
+                                    <span class="text-xs font-bold text-white flex items-center gap-1.5">
+                                        <i class="fa-solid fa-helicopter text-studioRed"></i> 4K Drone & Jimmy Jib Crane
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Strip 3: Camera Lens Reflection -->
+                        <div class="relative h-28 rounded-xl overflow-hidden border border-zinc-700/80 group">
+                            <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=80" 
+                                 onerror="this.src='https://placehold.co/800x250/111116/E50914?text=CANDID+WEDDING+PHOTOGRAPHY'"
+                                 alt="Camera Lens Reflection" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-r from-black/75 via-transparent to-black/60 flex items-center justify-between px-4">
+                                <div>
+                                    <span class="bg-studioRed text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase">Pro Full-Frame Optics</span>
+                                    <h4 class="text-white font-bold text-sm mt-1">Wedding Photography & Candid</h4>
+                                </div>
+                                <i class="fa-solid fa-camera-retro text-2xl text-siddhGold/90"></i>
+                            </div>
+                        </div>
+
+                        <!-- Strip 4: Cinema Rig Silhouette -->
+                        <div class="relative h-28 rounded-xl overflow-hidden border border-zinc-700/80 group">
+                            <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=900&q=80" 
+                                 onerror="this.src='https://placehold.co/800x250/111116/F59E0B?text=CINEMATOGRAPHY+LIVE+STREAMING'"
+                                 alt="Cinematographer Silhouette" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/30 to-transparent flex items-center px-4">
+                                <div>
+                                    <span class="text-siddhGold text-[10px] font-bold uppercase tracking-wider">Multi-Cam Setup</span>
+                                    <h4 class="text-white font-bold text-sm">Cinematography & HD Live Streaming</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Iconic JAIN VINUS STUDIO Typography, Services List & Direct CTAs -->
+                <div class="lg:col-span-7 order-1 lg:order-2 space-y-6">
+                    <!-- Top Pill Badge -->
+                    <div class="inline-flex items-center gap-2 bg-zinc-900/90 border border-zinc-700/80 px-4 py-1.5 rounded-full">
+                        <span class="w-2.5 h-2.5 rounded-full bg-studioRed"></span>
+                        <span class="text-xs sm:text-sm font-semibold text-zinc-200">
+                            Complete Photography, Cinematography & Event Stage Production
+                        </span>
+                    </div>
+
+                    <!-- Signature Banner Typography -->
+                    <div class="space-y-1">
+                        <h1 class="font-display text-6xl sm:text-7xl md:text-8xl tracking-wide text-white leading-none select-none">
+                            JAIN <span class="vinus-red-block px-1">VINUS</span>
+                        </h1>
+                        <div class="flex flex-wrap items-center justify-between gap-4 pt-1">
+                            <!-- Phone Numbers + Red Call Icon -->
+                            <div class="flex items-center gap-2.5 bg-zinc-900/90 border border-zinc-800 px-3.5 py-2 rounded-xl">
+                                <a href="tel:+916202486528" class="text-base sm:text-xl font-bold text-white hover:text-siddhGold transition">
+                                    +91 6202486528
+                                </a>
+                                <span class="text-zinc-500">,</span>
+                                <a href="tel:+918210892001" class="text-base sm:text-xl font-bold text-white hover:text-siddhGold transition">
+                                    8210892001
+                                </a>
+                                <a href="tel:+916202486528" class="w-8 h-8 rounded-full bg-studioRed text-white flex items-center justify-center shadow-red-glow hover:scale-105 transition" title="Call Now">
+                                    <i class="fa-solid fa-phone text-xs"></i>
+                                </a>
+                            </div>
+
+                            <!-- STUDIO with Red Block Accent -->
+                            <div class="font-display text-5xl sm:text-6xl md:text-7xl tracking-wider text-white leading-none studio-red-underblock">
+                                STUDIO
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Siddh Bhumi Channel Badge + Social Icons Row (Exact Match to Banner) -->
+                    <div class="flex flex-wrap items-center justify-between gap-4 bg-zinc-900/60 border border-zinc-800/90 p-3.5 rounded-2xl">
+                        <a href="#siddh-bhumi" class="flex items-center gap-3 group">
+                            <div class="w-12 h-9 rounded-lg bg-studioRed flex items-center justify-center text-white shadow-red-glow group-hover:scale-105 transition">
+                                <i class="fa-brands fa-youtube text-2xl"></i>
+                            </div>
+                            <div class="bg-gradient-to-r from-zinc-200 via-white to-zinc-200 text-black px-3.5 py-1 rounded-lg relative">
+                                <span class="font-bold text-sm sm:text-base tracking-tight block">Siddh Bhumi channel</span>
+                                <span class="bg-studioRed text-white text-[9px] font-extrabold uppercase px-2 py-0.5 rounded-full tracking-wider inline-block -mt-1">
+                                    LIKE & SUBSCRIBE
+                                </span>
+                            </div>
+                        </a>
+
+                        <div class="flex items-center gap-2.5">
+                            <span class="text-xs text-zinc-400 hidden sm:inline">Connect:</span>
+                            <a href="#siddh-bhumi" class="w-9 h-9 rounded-full bg-blue-600 hover:bg-blue-500 text-white flex items-center justify-center shadow transition transform hover:scale-110" title="Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#siddh-bhumi" class="w-9 h-9 rounded-full bg-gradient-to-tr from-amber-500 via-pink-600 to-purple-600 text-white flex items-center justify-center shadow transition transform hover:scale-110" title="Instagram @SIDDH_BHUMI">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#siddh-bhumi" class="w-9 h-9 rounded-full bg-studioRed hover:bg-red-500 text-white flex items-center justify-center shadow transition transform hover:scale-110" title="YouTube Siddh Bhumi Channel">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Highlighted Bullet Services Grid (Matching Banner Red Dots Layout) -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 bg-zinc-950/90 border border-zinc-800/80 p-5 rounded-2xl">
+                        <div class="space-y-2.5">
+                            <div class="flex items-center justify-between text-sm sm:text-base font-medium text-zinc-100">
+                                <span>LED Wall, Crane, Drone</span>
+                                <span class="w-3.5 h-3.5 rounded-full bg-studioRed shadow-red-glow shrink-0"></span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm sm:text-base font-medium text-zinc-100">
+                                <span>Wedding Photography & Videography</span>
+                                <span class="w-3.5 h-3.5 rounded-full bg-studioRed shadow-red-glow shrink-0"></span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm sm:text-base font-medium text-zinc-100">
+                                <span>Reels Video Making</span>
+                                <span class="w-3.5 h-3.5 rounded-full bg-studioRed shadow-red-glow shrink-0"></span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm sm:text-base font-medium text-zinc-100">
+                                <span>360° Revolving Selfie</span>
+                                <span class="w-3.5 h-3.5 rounded-full bg-studioRed shadow-red-glow shrink-0"></span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm sm:text-base font-medium text-zinc-100">
+                                <span>LED backdrop on Rajdarbar Stage</span>
+                                <span class="w-3.5 h-3.5 rounded-full bg-studioRed shadow-red-glow shrink-0"></span>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2.5 sm:border-l sm:border-zinc-800 sm:pl-5 flex flex-col justify-between">
+                            <div class="space-y-2.5">
+                                <div class="flex items-center justify-between text-sm sm:text-base font-medium text-zinc-100">
+                                    <span>Live Streaming</span>
+                                    <span class="w-3.5 h-3.5 rounded-full bg-studioRed shadow-red-glow shrink-0"></span>
+                                </div>
+                                <div class="flex items-center justify-between text-sm sm:text-base font-medium text-zinc-100">
+                                    <span>Cinematography</span>
+                                    <span class="w-3.5 h-3.5 rounded-full bg-studioRed shadow-red-glow shrink-0"></span>
+                                </div>
+                                <div class="flex items-center justify-between text-sm sm:text-base font-medium text-zinc-100">
+                                    <span>Video Editing</span>
+                                    <span class="w-3.5 h-3.5 rounded-full bg-studioRed shadow-red-glow shrink-0"></span>
+                                </div>
+                            </div>
+
+                            <!-- Stylized BOOK NOW Stamp from Card -->
+                            <div class="pt-3 flex items-center justify-between border-t border-zinc-800/80">
+                                <span class="text-xs text-siddhGold font-semibold">Instant Event Booking</span>
+                                <a href="#book-now" class="font-display text-3xl tracking-wider text-white book-now-block hover:scale-105 transition">
+                                    BOOK NOW
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Leadership & Address Bar + Main CTA Buttons -->
+                    <div class="space-y-4">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 bg-zinc-900/50 border-l-4 border-siddhGold px-4 py-2.5 rounded-r-xl">
+                            <div>
+                                <p class="text-xs uppercase tracking-wider text-zinc-400">Managed & Owned By</p>
+                                <p class="text-lg sm:text-xl font-bold text-white">Shailendra Jain , Rishabh Jain</p>
+                            </div>
+                            <div class="text-xs sm:text-right text-zinc-300">
+                                <p class="flex items-center sm:justify-end gap-1.5 font-medium">
+                                    <i class="fa-solid fa-location-dot text-studioRed text-sm"></i>
+                                    Main Road, Opp - Gunayatan
+                                </p>
+                                <p class="text-siddhGold font-semibold">Sammed Shikherjee (Madhuban) 825329</p>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="flex flex-wrap items-center gap-3.5 pt-1">
+                            <a href="#book-now" class="flex-1 sm:flex-initial bg-studioRed hover:bg-studioRedDark text-white font-bold px-7 py-3.5 rounded-xl shadow-red-glow transition flex items-center justify-center gap-2.5 text-base">
+                                <i class="fa-solid fa-calendar-plus"></i> Book Event Package
+                            </a>
+                            <a href="tel:+916202486528" class="flex-1 sm:flex-initial bg-zinc-900 hover:bg-zinc-800 text-white border border-zinc-700 font-bold px-6 py-3.5 rounded-xl transition flex items-center justify-center gap-2 text-base">
+                                <i class="fa-solid fa-phone text-siddhGold"></i> Call: +91 6202486528
+                            </a>
+                            <a href="#siddh-bhumi" class="w-full sm:w-auto bg-gradient-to-r from-amber-500/20 to-amber-600/10 hover:from-amber-500/30 border border-siddhGold/50 text-siddhGold font-bold px-5 py-3.5 rounded-xl transition flex items-center justify-center gap-2 text-sm">
+                                <i class="fa-solid fa-qrcode"></i> Siddh Bhumi QR
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION (Interactive Selection synced with Booking Form) -->
+    <section id="services" class="py-16 lg:py-24 bg-studioBlack relative border-b border-zinc-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <div class="inline-flex items-center gap-2 text-studioRed font-bold text-xs uppercase tracking-widest mb-2">
+                        <span class="w-6 h-0.5 bg-studioRed"></span> Our Flagship Capabilities
+                    </div>
+                    <h2 class="font-display text-4xl sm:text-5xl tracking-wide text-white">
+                        PREMIUM <span class="text-studioRed">STUDIO</span> & <span class="text-siddhGold">STAGE</span> SERVICES
+                    </h2>
+                </div>
+                <p class="text-zinc-400 text-sm max-w-md">
+                    Click <span class="text-white font-semibold">"Select for Booking"</span> on any service below to add it directly to your custom event package inquiry.
+                </p>
+            </div>
+
+            <!-- 8 Services Grid -->
+            <div id="servicesGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Populated dynamically via JS for interactive selection state -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SPECIAL FEATURED SECTION: SIDDH BHUMI CHANNEL - SPIRITUAL JOURNEY (Inspired by 1st Image) -->
+    <section id="siddh-bhumi" class="py-16 lg:py-24 relative overflow-hidden border-b border-amber-500/30" style="background: radial-gradient(circle at 25% 30%, rgba(180, 83, 9, 0.28) 0%, rgba(7, 7, 9, 0.98) 70%);">
+        <!-- Decorative Spiritual Background Elements -->
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-siddhGold to-transparent"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <!-- Top Spiritual Banner Header -->
+            <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+                <div class="inline-flex items-center gap-2 bg-black/80 border border-siddhGold/50 px-5 py-1.5 rounded-full shadow-gold-glow">
+                    <span class="text-orange-500"><i class="fa-solid fa-flag"></i></span>
+                    <span class="text-xs sm:text-sm font-bold uppercase tracking-widest text-siddhGold">
+                        Follow Now For More Updates • Shikharjee Madhuban
+                    </span>
+                </div>
+
+                <h2 class="font-heading font-black text-3xl sm:text-5xl text-white tracking-tight">
+                    <span class="text-siddhGold">SIDDH BHUMI</span> CHANNEL
+                </h2>
+                <p class="text-zinc-300 text-sm sm:text-base">
+                    Experience the divine <span class="text-siddhGold font-semibold">Spiritual Journey</span> from sacred Sammed Shikherjee (Madhuban). Scan or click below to stay connected on Instagram & YouTube!
+                </p>
+            </div>
+
+            <!-- Dual Split Card Showcase (Recreating the Left Golden Instagram Side & Right Dark YouTube Side) -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch bg-zinc-950/90 border-2 border-siddhGold/40 rounded-3xl p-5 sm:p-8 lg:p-10 shadow-gold-glow relative overflow-hidden">
+                
+                <!-- Left Side: Golden Spiritual Journey & Instagram @SIDDH_BHUMI Card -->
+                <div class="lg:col-span-6 rounded-2xl p-6 sm:p-8 relative overflow-hidden flex flex-col justify-between border border-amber-400/40"
+                     style="background: linear-gradient(135deg, rgba(120, 53, 15, 0.65) 0%, rgba(30, 20, 10, 0.92) 60%, rgba(15, 10, 5, 0.98) 100%);">
+                    
+                    <!-- Top Brush Banner: FOLLOW NOW FOR MORE UPDATES -->
+                    <div class="bg-black/90 border border-amber-500/40 rounded-xl px-4 py-2.5 text-center shadow-lg mb-6">
+                        <p class="font-script text-lg sm:text-xl text-zinc-100 tracking-wide">Follow Now For More Updates</p>
+                        <p class="text-[11px] font-bold tracking-widest text-siddhGold uppercase">- FOR MORE UPDATES -</p>
+                    </div>
+
+                    <!-- Middle Row: Interactive LIKE / FOLLOW / COMMENT / SHARE Buttons + Instagram QR Pedestal -->
+                    <div class="grid grid-cols-1 sm:grid-cols-12 gap-5 items-center my-auto">
+                        
+                        <!-- 4 Glossy Social Action Pills -->
+                        <div class="sm:col-span-5 flex sm:flex-col justify-center flex-wrap gap-2.5">
+                            <button onclick="triggerSocialAction('like')" class="flex-1 sm:flex-initial flex items-center gap-2.5 bg-gradient-to-r from-red-600 to-rose-500 hover:from-red-500 hover:to-rose-400 text-white font-extrabold text-xs sm:text-sm px-3.5 py-2.5 rounded-full shadow-lg border border-white/20 transition transform hover:scale-105 active:scale-95">
+                                <span class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center">
+                                    <i class="fa-solid fa-heart text-white"></i>
+                                </span>
+                                <span>LIKE</span>
+                                <span id="likeCountBadge" class="ml-auto text-[11px] bg-black/30 px-1.5 py-0.5 rounded-full">1.2K</span>
+                            </button>
+
+                            <a href="https://instagram.com/SIDDH_BHUMI" target="_blank" rel="noopener noreferrer" class="flex-1 sm:flex-initial flex items-center gap-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-extrabold text-xs sm:text-sm px-3.5 py-2.5 rounded-full shadow-lg border border-white/20 transition transform hover:scale-105">
+                                <span class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center">
+                                    <i class="fa-solid fa-user-plus text-white text-xs"></i>
+                                </span>
+                                <span>FOLLOW</span>
+                            </a>
+
+                            <button onclick="triggerSocialAction('comment')" class="flex-1 sm:flex-initial flex items-center gap-2.5 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-white font-extrabold text-xs sm:text-sm px-3.5 py-2.5 rounded-full shadow-lg border border-white/20 transition transform hover:scale-105">
+                                <span class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center">
+                                    <i class="fa-solid fa-comment-dots text-white text-xs"></i>
+                                </span>
+                                <span>COMMENT</span>
+                            </button>
+
+                            <button onclick="triggerSocialAction('share')" class="flex-1 sm:flex-initial flex items-center gap-2.5 bg-gradient-to-r from-purple-600 to-fuchsia-600 hover:from-purple-500 hover:to-fuchsia-500 text-white font-extrabold text-xs sm:text-sm px-3.5 py-2.5 rounded-full shadow-lg border border-white/20 transition transform hover:scale-105">
+                                <span class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center">
+                                    <i class="fa-solid fa-share text-white text-xs"></i>
+                                </span>
+                                <span>SHARE</span>
+                            </button>
+                        </div>
+
+                        <!-- Instagram @SIDDH_BHUMI Glossy QR Frame on Golden Pedestal -->
+                        <div class="sm:col-span-7 flex flex-col items-center">
+                            <div onclick="openQrModal('instagram')" class="cursor-pointer group relative p-1.5 rounded-3xl bg-gradient-to-tr from-amber-400 via-pink-500 to-purple-600 shadow-insta-glow transition transform hover:scale-105" title="Click to enlarge QR Code">
+                                <div class="bg-white rounded-2xl p-3.5 flex flex-col items-center w-52 sm:w-56">
+                                    <!-- Stylized Magenta/Purple Instagram QR SVG -->
+                                    <div class="relative w-40 h-40 flex items-center justify-center">
+                                        <svg viewBox="0 0 120 120" class="w-full h-full">
+                                            <defs>
+                                                <linearGradient id="instaGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+                                                    <stop offset="0%" stop-color="#f59e0b" />
+                                                    <stop offset="50%" stop-color="#d946ef" />
+                                                    <stop offset="100%" stop-color="#7c3aed" />
+                                                </linearGradient>
+                                            </defs>
+                                            <!-- Corner Finder Patterns -->
+                                            <rect x="6" y="6" width="28" height="28" rx="6" fill="none" stroke="url(#instaGrad)" stroke-width="4"/>
+                                            <circle cx="20" cy="20" r="6" fill="url(#instaGrad)"/>
+                                            <rect x="86" y="6" width="28" height="28" rx="6" fill="none" stroke="url(#instaGrad)" stroke-width="4"/>
+                                            <circle cx="100" cy="20" r="6" fill="url(#instaGrad)"/>
+                                            <rect x="6" y="86" width="28" height="28" rx="6" fill="none" stroke="url(#instaGrad)" stroke-width="4"/>
+                                            <circle cx="20" cy="100" r="6" fill="url(#instaGrad)"/>
+                                            <!-- QR Data Dots Pattern -->
+                                            <g fill="url(#instaGrad)">
+                                                <circle cx="44" cy="12" r="2.2"/><circle cx="52" cy="12" r="2.2"/><circle cx="68" cy="12" r="2.2"/><circle cx="76" cy="12" r="2.2"/>
+                                                <circle cx="44" cy="20" r="2.2"/><circle cx="60" cy="20" r="2.2"/><circle cx="68" cy="20" r="2.2"/>
+                                                <circle cx="44" cy="28" r="2.2"/><circle cx="52" cy="28" r="2.2"/><circle cx="76" cy="28" r="2.2"/>
+                                                <circle cx="12" cy="44" r="2.2"/><circle cx="20" cy="44" r="2.2"/><circle cx="28" cy="44" r="2.2"/><circle cx="36" cy="44" r="2.2"/><circle cx="84" cy="44" r="2.2"/><circle cx="92" cy="44" r="2.2"/><circle cx="108" cy="44" r="2.2"/>
+                                                <circle cx="12" cy="52" r="2.2"/><circle cx="28" cy="52" r="2.2"/><circle cx="92" cy="52" r="2.2"/><circle cx="100" cy="52" r="2.2"/>
+                                                <circle cx="20" cy="60" r="2.2"/><circle cx="36" cy="60" r="2.2"/><circle cx="84" cy="60" r="2.2"/><circle cx="108" cy="60" r="2.2"/>
+                                                <circle cx="12" cy="68" r="2.2"/><circle cx="28" cy="68" r="2.2"/><circle cx="36" cy="68" r="2.2"/><circle cx="92" cy="68" r="2.2"/><circle cx="100" cy="68" r="2.2"/>
+                                                <circle cx="20" cy="76" r="2.2"/><circle cx="44" cy="84" r="2.2"/><circle cx="60" cy="84" r="2.2"/><circle cx="76" cy="84" r="2.2"/><circle cx="84" cy="84" r="2.2"/><circle cx="100" cy="84" r="2.2"/>
+                                                <circle cx="44" cy="92" r="2.2"/><circle cx="52" cy="92" r="2.2"/><circle cx="68" cy="92" r="2.2"/><circle cx="92" cy="92" r="2.2"/><circle cx="108" cy="92" r="2.2"/>
+                                                <circle cx="44" cy="100" r="2.2"/><circle cx="60" cy="100" r="2.2"/><circle cx="76" cy="100" r="2.2"/><circle cx="84" cy="100" r="2.2"/><circle cx="100" cy="100" r="2.2"/>
+                                                <circle cx="52" cy="108" r="2.2"/><circle cx="68" cy="108" r="2.2"/><circle cx="84" cy="108" r="2.2"/><circle cx="92" cy="108" r="2.2"/><circle cx="108" cy="108" r="2.2"/>
+                                            </g>
+                                            <!-- Center Instagram Logo -->
+                                            <rect x="44" y="44" width="32" height="32" rx="8" fill="white" stroke="url(#instaGrad)" stroke-width="3.5"/>
+                                            <circle cx="60" cy="60" r="7" fill="none" stroke="url(#instaGrad)" stroke-width="3"/>
+                                            <circle cx="68.5" cy="51.5" r="2" fill="url(#instaGrad)"/>
+                                        </svg>
+                                    </div>
+                                    <!-- @SIDDH_BHUMI Caption -->
+                                    <div class="mt-1 flex items-center gap-1.5 font-heading font-extrabold text-xs sm:text-sm text-fuchsia-600">
+                                        <i class="fa-brands fa-instagram text-base"></i>
+                                        <span>@SIDDH_BHUMI</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Golden 3D Stage Pedestal Base -->
+                            <div class="w-48 h-4 bg-gradient-to-r from-amber-700 via-yellow-400 to-amber-700 rounded-b-full shadow-lg border-t border-yellow-200"></div>
+                            <div class="w-56 h-3 bg-gradient-to-r from-amber-900 via-amber-500 to-amber-900 rounded-full -mt-1 shadow-xl"></div>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Row: Glowing Diya + "SPIRITUAL Journey" Typography -->
+                    <div class="mt-6 pt-4 border-t border-amber-500/20 flex items-center justify-between gap-4">
+                        <!-- Glowing Diya Lamp SVG -->
+                        <div class="flex items-center gap-3">
+                            <div class="relative w-12 h-12 flex items-center justify-center">
+                                <svg viewBox="0 0 64 64" class="w-12 h-12">
+                                    <!-- Flame -->
+                                    <path class="flame-flicker" d="M32 8C32 8 24 20 24 27C24 31.4 27.6 35 32 35C36.4 35 40 31.4 40 27C40 20 32 8 32 8Z" fill="#FBBF24"/>
+                                    <path class="flame-flicker" d="M32 15C32 15 28 22 28 27C28 29.5 29.8 32 32 32C34.2 32 36 29.5 36 27C36 22 32 15 32 15Z" fill="#FEF08A"/>
+                                    <!-- Diya Bowl -->
+                                    <path d="M12 36H52L46 48C44 52 38 54 32 54C26 54 20 52 18 48L12 36Z" fill="#92400E" stroke="#F59E0B" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="brush-gold text-black font-heading font-black text-xs sm:text-sm px-3 py-0.5 uppercase tracking-wider inline-block">
+                                    SPIRITUAL
+                                </span>
+                                <p class="font-script text-3xl sm:text-4xl text-white drop-shadow leading-none -mt-1">
+                                    Journey
+                                </p>
+                            </div>
+                        </div>
+
+                        <a href="https://instagram.com/SIDDH_BHUMI" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-500 hover:to-purple-500 text-white font-bold text-xs sm:text-sm px-4 py-2.5 rounded-xl shadow-lg transition flex items-center gap-1.5">
+                            <i class="fa-brands fa-instagram"></i> Follow @SIDDH_BHUMI
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Side: Dark & Gold SIDDH BHUMI CHANNEL YouTube Showcase -->
+                <div class="lg:col-span-6 rounded-2xl p-6 sm:p-8 bg-gradient-to-b from-zinc-950 via-black to-zinc-950 border border-siddhGold/40 flex flex-col justify-between relative overflow-hidden">
+                    
+                    <!-- Top Brush Banner: SIDDH BHUMI CHANNEL -->
+                    <div class="flex flex-col items-center text-center mb-6">
+                        <div class="brush-gold px-6 py-2 transform -rotate-2 shadow-lg">
+                            <h3 class="font-heading font-black text-2xl sm:text-3xl text-black tracking-tight">
+                                SIDDH BHUMI
+                            </h3>
+                        </div>
+                        <div class="brush-red px-6 py-1 -mt-2 transform rotate-1 shadow-lg">
+                            <span class="font-heading font-extrabold text-lg sm:text-xl text-white tracking-widest uppercase">
+                                CHANNEL
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Middle Row: YouTube QR Code with Center Siddh Bhumi Emblem + Notification Bell -->
+                    <div class="grid grid-cols-1 sm:grid-cols-12 gap-5 items-center my-auto">
+                        
+                        <!-- Gold-Bordered Dark YouTube QR Box -->
+                        <div class="sm:col-span-7 flex flex-col items-center">
+                            <div onclick="openQrModal('youtube')" class="cursor-pointer group p-3 rounded-3xl bg-black border-2 border-siddhGold shadow-gold-glow transition transform hover:scale-105">
+                                <div class="relative w-48 h-48 sm:w-52 sm:h-52 flex items-center justify-center bg-black rounded-xl p-2">
+                                    <!-- White-on-Black Stylized QR Code SVG -->
+                                    <svg viewBox="0 0 120 120" class="w-full h-full">
+                                        <!-- Corner Finder Patterns -->
+                                        <rect x="6" y="6" width="28" height="28" rx="5" fill="none" stroke="#ffffff" stroke-width="4"/>
+                                        <rect x="13" y="13" width="14" height="14" rx="2" fill="#ffffff"/>
+                                        <rect x="86" y="6" width="28" height="28" rx="5" fill="none" stroke="#ffffff" stroke-width="4"/>
+                                        <rect x="93" y="13" width="14" height="14" rx="2" fill="#ffffff"/>
+                                        <rect x="6" y="86" width="28" height="28" rx="5" fill="none" stroke="#ffffff" stroke-width="4"/>
+                                        <rect x="13" y="93" width="14" height="14" rx="2" fill="#ffffff"/>
+                                        <!-- QR Dots -->
+                                        <g fill="#ffffff">
+                                            <circle cx="42" cy="10" r="2.2"/><circle cx="50" cy="10" r="2.2"/><circle cx="66" cy="10" r="2.2"/><circle cx="74" cy="10" r="2.2"/>
+                                            <circle cx="42" cy="18" r="2.2"/><circle cx="58" cy="18" r="2.2"/><circle cx="66" cy="18" r="2.2"/><circle cx="78" cy="18" r="2.2"/>
+                                            <circle cx="46" cy="26" r="2.2"/><circle cx="54" cy="26" r="2.2"/><circle cx="70" cy="26" r="2.2"/>
+                                            <circle cx="10" cy="42" r="2.2"/><circle cx="18" cy="42" r="2.2"/><circle cx="26" cy="42" r="2.2"/><circle cx="34" cy="42" r="2.2"/><circle cx="86" cy="42" r="2.2"/><circle cx="94" cy="42" r="2.2"/><circle cx="110" cy="42" r="2.2"/>
+                                            <circle cx="10" cy="50" r="2.2"/><circle cx="26" cy="50" r="2.2"/><circle cx="94" cy="50" r="2.2"/><circle cx="102" cy="50" r="2.2"/>
+                                            <circle cx="18" cy="58" r="2.2"/><circle cx="30" cy="58" r="2.2"/><circle cx="86" cy="58" r="2.2"/><circle cx="110" cy="58" r="2.2"/>
+                                            <circle cx="10" cy="66" r="2.2"/><circle cx="26" cy="66" r="2.2"/><circle cx="34" cy="66" r="2.2"/><circle cx="94" cy="66" r="2.2"/><circle cx="102" cy="66" r="2.2"/>
+                                            <circle cx="18" cy="74" r="2.2"/><circle cx="42" cy="86" r="2.2"/><circle cx="58" cy="86" r="2.2"/><circle cx="74" cy="86" r="2.2"/><circle cx="86" cy="86" r="2.2"/><circle cx="102" cy="86" r="2.2"/>
+                                            <circle cx="42" cy="94" r="2.2"/><circle cx="50" cy="94" r="2.2"/><circle cx="66" cy="94" r="2.2"/><circle cx="94" cy="94" r="2.2"/><circle cx="110" cy="94" r="2.2"/>
+                                            <circle cx="42" cy="102" r="2.2"/><circle cx="58" cy="102" r="2.2"/><circle cx="74" cy="102" r="2.2"/><circle cx="86" cy="102" r="2.2"/><circle cx="102" cy="102" r="2.2"/>
+                                            <circle cx="50" cy="110" r="2.2"/><circle cx="66" cy="110" r="2.2"/><circle cx="86" cy="110" r="2.2"/><circle cx="94" cy="110" r="2.2"/><circle cx="110" cy="110" r="2.2"/>
+                                        </g>
+                                    </svg>
+
+                                    <!-- Center Circular Siddh Bhumi Shikharjee Emblem + YouTube Button -->
+                                    <div class="absolute w-16 h-16 rounded-full bg-black border-2 border-white flex flex-col items-center justify-center p-1 shadow-xl">
+                                        <div class="w-8 h-5 rounded-t-full bg-gradient-to-b from-amber-400 to-orange-600 flex items-end justify-center overflow-hidden">
+                                            <div class="w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-b-[8px] border-b-black"></div>
+                                        </div>
+                                        <span class="text-[6px] font-bold text-siddhGold leading-none mt-0.5">siddh BHUMI</span>
+                                        <div class="w-6 h-4 bg-studioRed rounded flex items-center justify-center mt-0.5">
+                                            <i class="fa-solid fa-play text-[7px] text-white"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Column: "Stay Connected with Siddh Bhumi" + Glowing Animated Bell -->
+                        <div class="sm:col-span-5 flex flex-col items-center text-center space-y-4">
+                            <p class="font-script text-2xl sm:text-3xl text-siddhGold leading-snug">
+                                Stay Connected with Siddh Bhumi
+                            </p>
+
+                            <!-- Glowing Golden Bell Circle -->
+                            <button onclick="triggerSocialAction('subscribe')" class="w-20 h-20 rounded-full bg-gradient-to-b from-amber-500/20 to-black border-2 border-siddhGold/80 flex items-center justify-center shadow-gold-glow group hover:scale-110 transition" title="Ring Notification Bell">
+                                <i class="fa-solid fa-bell text-4xl text-siddhGold bell-animate"></i>
+                            </button>
+                            <span class="text-[11px] text-zinc-400">Click QR to Zoom • Turn on Bell</span>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Red Glossy SUBSCRIBE NOW Button -->
+                    <div class="mt-6 pt-3">
+                        <a href="https://www.youtube.com/@siddhbhumichannel" target="_blank" rel="noopener noreferrer"
+                           class="w-full py-3.5 px-6 rounded-full bg-gradient-to-b from-red-500 via-studioRed to-red-800 hover:from-red-400 hover:to-red-700 border-2 border-red-400/60 shadow-red-glow flex items-center justify-center gap-3 group transition transform hover:-translate-y-0.5">
+                            <span class="w-9 h-7 rounded-lg bg-white text-studioRed flex items-center justify-center shadow">
+                                <i class="fa-solid fa-play text-sm"></i>
+                            </span>
+                            <span class="font-heading font-black text-lg sm:text-xl text-white tracking-wider">
+                                SUBSCRIBE NOW
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FILTERABLE PORTFOLIO / VISUAL SHOWCASE SECTION -->
+    <section id="portfolio" class="py-16 lg:py-24 bg-studioBlack border-b border-zinc-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Header & Filter Pills -->
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-10 gap-6">
+                <div>
+                    <div class="inline-flex items-center gap-2 text-siddhGold font-bold text-xs uppercase tracking-widest mb-2">
+                        <span class="w-6 h-0.5 bg-siddhGold"></span> Visual Showcase
+                    </div>
+                    <h2 class="font-display text-4xl sm:text-5xl tracking-wide text-white">
+                        OUR <span class="text-studioRed">PRODUCTION</span> PORTFOLIO
+                    </h2>
+                </div>
+
+                <!-- Category Filter Buttons -->
+                <div id="portfolioFilters" class="flex flex-wrap gap-2">
+                    <button data-filter="all" class="portfolio-filter-btn active bg-studioRed text-white font-bold text-xs sm:text-sm px-4 py-2 rounded-full transition">
+                        All Works
+                    </button>
+                    <button data-filter="wedding" class="portfolio-filter-btn bg-zinc-900 hover:bg-zinc-800 text-zinc-300 border border-zinc-800 font-semibold text-xs sm:text-sm px-4 py-2 rounded-full transition">
+                        Wedding & Cinematography
+                    </button>
+                    <button data-filter="drone" class="portfolio-filter-btn bg-zinc-900 hover:bg-zinc-800 text-zinc-300 border border-zinc-800 font-semibold text-xs sm:text-sm px-4 py-2 rounded-full transition">
+                        Drone & Crane
+                    </button>
+                    <button data-filter="stage" class="portfolio-filter-btn bg-zinc-900 hover:bg-zinc-800 text-zinc-300 border border-zinc-800 font-semibold text-xs sm:text-sm px-4 py-2 rounded-full transition">
+                        Rajdarbar Stage & LED Wall
+                    </button>
+                    <button data-filter="selfie" class="portfolio-filter-btn bg-zinc-900 hover:bg-zinc-800 text-zinc-300 border border-zinc-800 font-semibold text-xs sm:text-sm px-4 py-2 rounded-full transition">
+                        360° Selfie & Reels
+                    </button>
+                    <button data-filter="spiritual" class="portfolio-filter-btn bg-zinc-900 hover:bg-zinc-800 text-zinc-300 border border-zinc-800 font-semibold text-xs sm:text-sm px-4 py-2 rounded-full transition">
+                        Spiritual Coverage
+                    </button>
+                </div>
+            </div>
+
+            <!-- Portfolio Cards Grid -->
+            <div id="portfolioGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Dynamically populated via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE BOOK NOW & PACKAGE CUSTOMIZER SECTION -->
+    <section id="book-now" class="py-16 lg:py-24 relative bg-gradient-to-b from-studioBlack via-zinc-950 to-studioBlack border-b border-zinc-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                
+                <!-- Left Column: Booking Form & Multi-Service Selector -->
+                <div class="lg:col-span-8 bg-zinc-900/90 border border-zinc-800 rounded-3xl p-6 sm:p-8 shadow-2xl">
+                    <div class="flex flex-wrap items-center justify-between gap-2 pb-6 mb-6 border-b border-zinc-800">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-widest text-studioRed">Custom Event Package</span>
+                            <h2 class="font-display text-3xl sm:text-4xl text-white tracking-wide mt-0.5">
+                                BOOK <span class="text-siddhGold">JAIN VINUS STUDIO</span> NOW
+                            </h2>
+                        </div>
+                        <div class="text-xs text-zinc-400 bg-zinc-950 px-3.5 py-2 rounded-xl border border-zinc-800">
+                            <i class="fa-brands fa-whatsapp text-emerald-400 mr-1"></i> Direct WhatsApp & Call Confirmation
+                        </div>
+                    </div>
+
+                    <form id="bookingForm" onsubmit="handleBookingSubmit(event)" class="space-y-6">
+                        <!-- Customer Info Inputs -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-zinc-300 mb-2">Your Full Name *</label>
+                                <input type="text" id="custName" required placeholder="e.g. Rajesh Jain"
+                                       class="w-full bg-zinc-950 border border-zinc-700 focus:border-siddhGold rounded-xl px-4 py-3 text-white text-sm outline-none transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-zinc-300 mb-2">Phone / WhatsApp Number *</label>
+                                <input type="tel" id="custPhone" required placeholder="e.g. +91 9876543210"
+                                       class="w-full bg-zinc-950 border border-zinc-700 focus:border-siddhGold rounded-xl px-4 py-3 text-white text-sm outline-none transition">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-zinc-300 mb-2">Event Date *</label>
+                                <input type="date" id="eventDate" required
+                                       class="w-full bg-zinc-950 border border-zinc-700 focus:border-siddhGold rounded-xl px-4 py-3 text-white text-sm outline-none transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-zinc-300 mb-2">Event Type</label>
+                                <select id="eventType" class="w-full bg-zinc-950 border border-zinc-700 focus:border-siddhGold rounded-xl px-4 py-3 text-white text-sm outline-none transition">
+                                    <option value="Wedding & Reception">Wedding & Reception</option>
+                                    <option value="Bollywood Night / Sangeet Stage">Bollywood Night / Sangeet Stage</option>
+                                    <option value="Spiritual Event / Mahotsav">Spiritual Event / Mahotsav</option>
+                                    <option value="Pre-Wedding Shoot">Pre-Wedding Shoot</option>
+                                    <option value="Birthday / Anniversary / Corporate">Birthday / Anniversary / Corporate</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-zinc-300 mb-2">Event Venue / Location *</label>
+                                <input type="text" id="eventLocation" required value="Sammed Shikherjee (Madhuban)"
+                                       placeholder="e.g. Gunayatan, Madhuban"
+                                       class="w-full bg-zinc-950 border border-zinc-700 focus:border-siddhGold rounded-xl px-4 py-3 text-white text-sm outline-none transition">
+                            </div>
+                        </div>
+
+                        <!-- Multi-Service Checkboxes (All 10 items from their studio card) -->
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <label class="block text-xs font-bold uppercase tracking-wider text-siddhGold">
+                                    Select Studio & Stage Services Required *
+                                </label>
+                                <button type="button" onclick="selectAllServices()" class="text-xs text-zinc-400 hover:text-white underline">
+                                    Select Full Package
+                                </button>
+                            </div>
+
+                            <div id="bookingCheckboxes" class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                                <!-- Populated via JS -->
+                            </div>
+                        </div>
+
+                        <!-- Additional Notes -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-zinc-300 mb-2">Special Requirements / Stage Theme Details</label>
+                            <textarea id="eventNotes" rows="2" placeholder="Mention number of days, LED wall size, drone hours, or live streaming links..."
+                                      class="w-full bg-zinc-950 border border-zinc-700 focus:border-siddhGold rounded-xl px-4 py-2.5 text-white text-sm outline-none transition"></textarea>
+                        </div>
+
+                        <!-- Submit & Action Buttons -->
+                        <div class="flex flex-col sm:flex-row gap-3 pt-2">
+                            <button type="submit" class="flex-1 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 px-6 rounded-xl shadow-lg transition flex items-center justify-center gap-2.5 text-base">
+                                <i class="fa-brands fa-whatsapp text-xl"></i> Send Booking Inquiry on WhatsApp
+                            </button>
+                            <button type="button" onclick="previewConfirmation()" class="bg-studioRed hover:bg-studioRedDark text-white font-bold py-4 px-6 rounded-xl shadow-red-glow transition flex items-center justify-center gap-2 text-sm">
+                                <i class="fa-solid fa-file-invoice"></i> Instant Summary Preview
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Right Column: Live Package Summary & Direct Contact Card -->
+                <div class="lg:col-span-4 space-y-6">
+                    <!-- Live Selected Services Summary Card -->
+                    <div class="bg-zinc-900/90 border border-siddhGold/40 rounded-3xl p-6 shadow-gold-glow space-y-4">
+                        <div class="flex items-center justify-between border-b border-zinc-800 pb-3">
+                            <h3 class="font-heading font-bold text-lg text-white flex items-center gap-2">
+                                <i class="fa-solid fa-list-check text-siddhGold"></i> Your Selected Package
+                            </h3>
+                            <span id="selectedCountBadge" class="bg-studioRed text-white text-xs font-extrabold px-2.5 py-1 rounded-full">
+                                3 Selected
+                            </span>
+                        </div>
+
+                        <ul id="liveSummaryList" class="space-y-2 text-sm text-zinc-200 max-h-60 overflow-y-auto pr-1">
+                            <!-- Updated dynamically -->
+                        </ul>
+
+                        <div class="pt-3 border-t border-zinc-800 text-xs text-zinc-400 space-y-1">
+                            <p><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5"></i> Latest 4K/8K Cinema Cameras & Drones</p>
+                            <p><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5"></i> On-time Setup at Sammed Shikherjee & Nearby Cities</p>
+                        </div>
+                    </div>
+
+                    <!-- Studio Owners Direct Contact Card -->
+                    <div class="bg-zinc-900/90 border border-zinc-800 rounded-3xl p-6 space-y-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-2xl bg-studioRed/20 border border-studioRed flex items-center justify-center text-studioRed text-xl font-bold">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-zinc-400 uppercase tracking-wider">Studio Directors</p>
+                                <h4 class="text-base font-bold text-white">Shailendra Jain & Rishabh Jain</h4>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2.5 pt-2">
+                            <a href="tel:+916202486528" class="w-full flex items-center justify-between bg-zinc-950 hover:bg-zinc-800 border border-zinc-800 px-4 py-3 rounded-xl transition">
+                                <span class="text-sm font-semibold text-white"><i class="fa-solid fa-phone text-studioRed mr-2"></i> +91 6202486528</span>
+                                <span class="text-xs text-siddhGold font-bold">Call Now →</span>
+                            </a>
+                            <a href="tel:+918210892001" class="w-full flex items-center justify-between bg-zinc-950 hover:bg-zinc-800 border border-zinc-800 px-4 py-3 rounded-xl transition">
+                                <span class="text-sm font-semibold text-white"><i class="fa-solid fa-phone text-studioRed mr-2"></i> +91 8210892001</span>
+                                <span class="text-xs text-siddhGold font-bold">Call Now →</span>
+                            </a>
+                            <button onclick="copyPhoneNumber('+91 6202486528')" class="w-full text-center text-xs text-zinc-400 hover:text-white py-1.5">
+                                <i class="fa-regular fa-copy mr-1"></i> Copy Studio Contact Number
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US, LEADERSHIP & LOCATION FOOTER SECTION -->
+    <footer id="about" class="bg-black pt-16 pb-12 border-t border-zinc-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+            
+            <!-- Top Studio Card Digital Replica Banner -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-12 border-b border-zinc-800/80">
+                <!-- Col 1: Brand Info -->
+                <div class="md:col-span-5 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-11 h-11 rounded-xl bg-zinc-900 border border-siddhGold flex items-center justify-center text-siddhGold">
+                            <i class="fa-solid fa-camera text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-heading font-black text-xl text-white">JAIN <span class="text-studioRed">VINUS</span> STUDIO</h3>
+                            <p class="text-xs text-siddhGold">Siddh Bhumi Channel • Shikharjee (Madhuban)</p>
+                        </div>
+                    </div>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                        Premier Wedding Photography, Cinematography, LED Wall, Jimmy Jib Crane, Aerial Drone, 360° Revolving Selfie Booth, and Rajdarbar Stage Production Studio located opposite Gunayatan in Sammed Shikherjee (Madhuban).
+                    </p>
+                    <div class="pt-1">
+                        <p class="text-xs uppercase tracking-widest text-zinc-500">Managed & Owned By</p>
+                        <p class="text-lg font-bold text-white mt-0.5">Shailendra Jain , Rishabh Jain</p>
+                    </div>
+                </div>
+
+                <!-- Col 2: Complete Services List -->
+                <div class="md:col-span-4 space-y-3">
+                    <h4 class="font-heading font-bold text-sm uppercase tracking-wider text-siddhGold">Our Studio Services</h4>
+                    <ul class="grid grid-cols-1 gap-2 text-sm text-zinc-300">
+                        <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-studioRed"></span> Wedding Photography & Videography</li>
+                        <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-studioRed"></span> Cinematography & Video Editing</li>
+                        <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-studioRed"></span> LED Wall, Crane, Drone Coverage</li>
+                        <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-studioRed"></span> LED Backdrop on Rajdarbar Stage</li>
+                        <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-studioRed"></span> Multi-Cam HD Live Streaming</li>
+                        <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-studioRed"></span> 360° Revolving Selfie & Reels Making</li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Studio Address & Contact -->
+                <div class="md:col-span-3 space-y-4">
+                    <h4 class="font-heading font-bold text-sm uppercase tracking-wider text-siddhGold">Studio Location</h4>
+                    <div class="bg-zinc-900/90 border border-zinc-800 p-4 rounded-2xl space-y-3 text-sm">
+                        <p class="text-zinc-200 flex items-start gap-2.5">
+                            <i class="fa-solid fa-location-dot text-studioRed text-lg mt-0.5"></i>
+                            <span>Main Road, Opp - Gunayatan, Sammed Shikherjee (Madhuban) 825329</span>
+                        </p>
+                        <div class="pt-2 border-t border-zinc-800 space-y-1.5">
+                            <a href="tel:+916202486528" class="block text-white font-bold hover:text-siddhGold transition">
+                                <i class="fa-solid fa-phone text-studioRed mr-1.5"></i> +91 6202486528
+                            </a>
+                            <a href="tel:+918210892001" class="block text-white font-bold hover:text-siddhGold transition">
+                                <i class="fa-solid fa-phone text-studioRed mr-1.5"></i> +91 8210892001
+                            </a>
+                        </div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Gunayatan+Sammed+Shikharji+Madhuban+825329" target="_blank" rel="noopener noreferrer"
+                           class="w-full bg-zinc-800 hover:bg-zinc-700 text-xs font-bold text-siddhGold py-2.5 px-3 rounded-xl flex items-center justify-center gap-1.5 transition">
+                            <i class="fa-solid fa-diamond-turn-right"></i> Open in Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Copyright & Social Bar -->
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-500">
+                <p>© 2026 <strong class="text-zinc-300">JAIN VINUS STUDIO</strong> & <strong class="text-siddhGold">SIDDH BHUMI CHANNEL</strong>. All Rights Reserved.</p>
+                <div class="flex items-center gap-4">
+                    <a href="#siddh-bhumi" class="hover:text-white transition flex items-center gap-1">
+                        <i class="fa-brands fa-instagram text-pink-500"></i> @SIDDH_BHUMI
+                    </a>
+                    <a href="#siddh-bhumi" class="hover:text-white transition flex items-center gap-1">
+                        <i class="fa-brands fa-youtube text-studioRed"></i> Siddh Bhumi channel
+                    </a>
+                    <a href="#home" class="bg-zinc-900 hover:bg-zinc-800 text-zinc-300 px-3 py-1.5 rounded-lg border border-zinc-800">
+                        Top ↑
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX / MODAL FOR PORTFOLIO & QR CODES & BOOKING PREVIEW -->
+    <div id="universalModal" class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="bg-zinc-900 border border-zinc-700 rounded-3xl max-w-lg w-full p-6 relative shadow-2xl animate-fadeIn">
+            <button onclick="closeModal()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-zinc-800 hover:bg-studioRed text-white flex items-center justify-center transition">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION BOX -->
+    <div id="toastBox" class="fixed bottom-5 right-5 z-50 hidden bg-zinc-900 border-2 border-siddhGold text-white px-5 py-3.5 rounded-2xl shadow-2xl flex items-center gap-3 max-w-sm">
+        <i id="toastIcon" class="fa-solid fa-circle-check text-siddhGold text-xl"></i>
+        <p id="toastMessage" class="text-sm font-medium"></p>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // 1. All 8 Core Services from Jain Vinus Studio Card
+        const STUDIO_SERVICES = [
+            {
+                id: 'wedding',
+                title: 'Wedding Photography & Videography',
+                shortCheck: 'Wedding Photography & Videography',
+                badge: 'Most Popular',
+                icon: 'fa-camera-retro',
+                image: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=700&q=80',
+                desc: 'Candid, Traditional, Pre-wedding shoots & luxury wedding albums capturing every royal ritual and emotion.'
+            },
+            {
+                id: 'cinematography',
+                title: 'Cinematography',
+                shortCheck: 'Cinematography',
+                badge: '4K Cinema Rigs',
+                icon: 'fa-film',
+                image: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=700&q=80',
+                desc: 'High-end cinema cameras, gimbal stabilizers, and artistic storytelling for wedding teasers and feature films.'
+            },
+            {
+                id: 'led-crane-drone',
+                title: 'LED Wall, Crane & Drone',
+                shortCheck: 'LED Wall, Crane, Drone',
+                badge: 'Aerial & Stage',
+                icon: 'fa-helicopter',
+                image: 'https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=700&q=80',
+                desc: '4K aerial drone coverage, sweeping Jimmy Jib crane shots, and high-brightness outdoor/indoor event LED walls.'
+            },
+            {
+                id: 'rajdarbar-stage',
+                title: 'LED Backdrop on Rajdarbar Stage',
+                shortCheck: 'LED Backdrop on Rajdarbar Stage',
+                badge: 'Grand Visuals',
+                icon: 'fa-crown',
+                image: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=700&q=80',
+                desc: 'Custom synchronized LED stage backdrops for royal Rajdarbar Varmala themes, Sangeet & Bollywood Night shows.'
+            },
+            {
+                id: 'live-streaming',
+                title: 'Live Streaming',
+                shortCheck: 'Live Streaming',
+                badge: 'Multi-Cam HD',
+                icon: 'fa-satellite-dish',
+                image: 'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=700&q=80',
+                desc: 'Crystal-clear multi-camera HD live broadcast on YouTube & Facebook for weddings, spiritual events & stage programs.'
+            },
+            {
+                id: 'reels-making',
+                title: 'Reels Video Making',
+                shortCheck: 'Reels Video Making',
+                badge: 'Instant Delivery',
+                icon: 'fa-mobile-screen-button',
+                image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=700&q=80',
+                desc: 'On-the-spot trending Instagram & YouTube Reels creation with fast transitions and same-day social media delivery.'
+            },
+            {
+                id: 'revolving-selfie',
+                title: '360° Revolving Selfie',
+                shortCheck: '360° Revolving Selfie',
+                badge: 'Interactive Booth',
+                icon: 'fa-arrows-spin',
+                image: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=700&q=80',
+                desc: 'Interactive 360-degree slow-motion revolving video booth with RGB ring lighting for guests at weddings and parties.'
+            },
+            {
+                id: 'video-editing',
+                title: 'Video Editing',
+                shortCheck: 'Video Editing',
+                badge: 'Post-Production',
+                icon: 'fa-wand-magic-sparkles',
+                image: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=700&q=80',
+                desc: 'Professional color grading, VFX, custom audio mastering, and cinematic highlight editing in our studio suite.'
+            }
+        ];
+
+        // 2. All 10 Granular Checkboxes for the Booking Customizer
+        const BOOKING_CHECKBOX_ITEMS = [
+            'Wedding Photography & Videography',
+            'Cinematography',
+            'LED Wall',
+            'Crane',
+            'Drone',
+            'LED Backdrop on Rajdarbar Stage',
+            'Live Streaming',
+            'Reels Video Making',
+            '360° Revolving Selfie',
+            'Video Editing'
+        ];
+
+        let selectedBookingItems = new Set([
+            'Wedding Photography & Videography',
+            'Cinematography',
+            'LED Wall'
+        ]);
+
+        // 3. Portfolio Items
+        const PORTFOLIO_ITEMS = [
+            {
+                title: 'Bollywood Night & Sangeet LED Stage',
+                category: 'stage',
+                categoryLabel: 'Rajdarbar Stage & LED Wall',
+                image: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80',
+                gear: 'P2 High-Refresh LED Wall + Dynamic Stage Lighting',
+                serviceToSelect: 'LED Backdrop on Rajdarbar Stage'
+            },
+            {
+                title: 'Royal Candid Wedding & Varmala',
+                category: 'wedding',
+                categoryLabel: 'Wedding & Cinematography',
+                image: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80',
+                gear: 'Full-Frame Mirrorless + Prime Cinema Lenses',
+                serviceToSelect: 'Wedding Photography & Videography'
+            },
+            {
+                title: 'Sammed Shikherjee Spiritual Mahotsav Live',
+                category: 'spiritual',
+                categoryLabel: 'Spiritual Coverage (Siddh Bhumi)',
+                image: 'https://images.unsplash.com/photo-1545128485-c400e7702796?auto=format&fit=crop&w=800&q=80',
+                gear: 'Multi-Cam HD Live Switcher + YouTube Broadcast',
+                serviceToSelect: 'Live Streaming'
+            },
+            {
+                title: '4K Aerial Drone & Jimmy Jib Crane',
+                category: 'drone',
+                categoryLabel: 'Drone & Crane',
+                image: 'https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=800&q=80',
+                gear: '4K Cinema Drone + 24ft Jimmy Jib Crane',
+                serviceToSelect: 'Drone'
+            },
+            {
+                title: '360° Slow-Motion Revolving Selfie Booth',
+                category: 'selfie',
+                categoryLabel: '360° Selfie & Reels',
+                image: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80',
+                gear: 'Motorized 360° Platform + Instant Reel Sharing',
+                serviceToSelect: '360° Revolving Selfie'
+            },
+            {
+                title: 'Cinematic Pre-Wedding & Post-Production',
+                category: 'wedding',
+                categoryLabel: 'Wedding & Cinematography',
+                image: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80',
+                gear: '4K Gimbal Rig + Studio Color Grading Suite',
+                serviceToSelect: 'Cinematography'
+            }
+        ];
+
+        // Render Services Cards
+        function renderServices() {
+            const container = document.getElementById('servicesGrid');
+            container.innerHTML = STUDIO_SERVICES.map(s => {
+                const isSelected = selectedBookingItems.has(s.shortCheck) ||
+                    (s.shortCheck === 'LED Wall, Crane, Drone' && selectedBookingItems.has('LED Wall'));
+                return `
+                <div class="bg-zinc-900/90 border ${isSelected ? 'border-siddhGold shadow-gold-glow' : 'border-zinc-800'} rounded-2xl overflow-hidden flex flex-col justify-between group hover:border-studioRed transition duration-300">
+                    <div>
+                        <div class="relative h-44 overflow-hidden">
+                            <img src="${s.image}" alt="${s.title}"
+                                 onerror="this.src='https://placehold.co/600x400/111116/F59E0B?text=${encodeURIComponent(s.title)}'"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-black/30 to-transparent"></div>
+                            <span class="absolute top-3 left-3 bg-black/80 border border-zinc-700 text-siddhGold text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">
+                                ${s.badge}
+                            </span>
+                            <div class="absolute bottom-3 left-3 w-10 h-10 rounded-xl bg-studioRed text-white flex items-center justify-center shadow-red-glow">
+                                <i class="fa-solid ${s.icon}"></i>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-heading font-bold text-base text-white group-hover:text-siddhGold transition flex items-center justify-between gap-2">
+                                <span>${s.title}</span>
+                                <span class="w-2.5 h-2.5 rounded-full bg-studioRed shrink-0"></span>
+                            </h3>
+                            <p class="text-zinc-400 text-xs leading-relaxed mt-2">
+                                ${s.desc}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5">
+                        <button onclick="toggleServiceFromCard('${s.shortCheck}')"
+                                class="w-full py-2.5 px-4 rounded-xl font-bold text-xs transition flex items-center justify-center gap-2 ${isSelected ? 'bg-siddhGold text-black' : 'bg-zinc-800 hover:bg-studioRed text-white'}">
+                            <i class="fa-solid ${isSelected ? 'fa-check-circle' : 'fa-plus-circle'}"></i>
+                            ${isSelected ? 'Selected in Booking' : 'Select for Booking'}
+                        </button>
+                    </div>
+                </div>
+                `;
+            }).join('');
+        }
+
+        // Render Booking Checkboxes & Live Summary
+        function renderBookingCheckboxes() {
+            const container = document.getElementById('bookingCheckboxes');
+            container.innerHTML = BOOKING_CHECKBOX_ITEMS.map(item => {
+                const checked = selectedBookingItems.has(item);
+                return `
+                <label onclick="toggleBookingItem('${item}')" class="cursor-pointer flex items-center justify-between p-3 rounded-xl border ${checked ? 'bg-studioRed/15 border-studioRed text-white' : 'bg-zinc-950 border-zinc-800 text-zinc-300'} hover:border-siddhGold transition select-none">
+                    <div class="flex items-center gap-2.5">
+                        <span class="w-5 h-5 rounded flex items-center justify-center ${checked ? 'bg-studioRed text-white' : 'bg-zinc-800 text-transparent'}">
+                            <i class="fa-solid fa-check text-xs"></i>
+                        </span>
+                        <span class="text-xs sm:text-sm font-semibold">${item}</span>
+                    </div>
+                    <span class="w-2.5 h-2.5 rounded-full bg-studioRed"></span>
+                </label>
+                `;
+            }).join('');
+
+            // Update Live Summary List
+            const summaryList = document.getElementById('liveSummaryList');
+            const badge = document.getElementById('selectedCountBadge');
+            const itemsArray = Array.from(selectedBookingItems);
+            badge.textContent = `${itemsArray.length} Selected`;
+
+            if (itemsArray.length === 0) {
+                summaryList.innerHTML = `<li class="text-zinc-500 text-xs italic">No services selected yet. Click any service to add it.</li>`;
+            } else {
+                summaryList.innerHTML = itemsArray.map(item => `
+                    <li class="flex items-center justify-between bg-zinc-950 px-3 py-2 rounded-lg border border-zinc-800">
+                        <span class="flex items-center gap-2 text-xs font-medium">
+                            <span class="w-2 h-2 rounded-full bg-studioRed"></span> ${item}
+                        </span>
+                        <button onclick="toggleBookingItem('${item}')" class="text-zinc-500 hover:text-studioRed text-xs" title="Remove">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </li>
+                `).join('');
+            }
+        }
+
+        function toggleBookingItem(item) {
+            if (selectedBookingItems.has(item)) {
+                selectedBookingItems.delete(item);
+            } else {
+                selectedBookingItems.add(item);
+            }
+            renderBookingCheckboxes();
+            renderServices();
+        }
+
+        function toggleServiceFromCard(shortCheck) {
+            if (shortCheck === 'LED Wall, Crane, Drone') {
+                ['LED Wall', 'Crane', 'Drone'].forEach(sub => selectedBookingItems.add(sub));
+                showToast('Added LED Wall, Crane & Drone to your package!');
+            } else {
+                if (selectedBookingItems.has(shortCheck)) {
+                    selectedBookingItems.delete(shortCheck);
+                    showToast(`Removed ${shortCheck} from package.`);
+                } else {
+                    selectedBookingItems.add(shortCheck);
+                    showToast(`Added ${shortCheck} to your booking package!`);
+                }
+            }
+            renderBookingCheckboxes();
+            renderServices();
+        }
+
+        function selectAllServices() {
+            BOOKING_CHECKBOX_ITEMS.forEach(i => selectedBookingItems.add(i));
+            renderBookingCheckboxes();
+            renderServices();
+            showToast('Full Studio & Stage Production Package Selected!');
+        }
+
+        // Render Portfolio Grid
+        function renderPortfolio(filter = 'all') {
+            const grid = document.getElementById('portfolioGrid');
+            const filtered = filter === 'all' ? PORTFOLIO_ITEMS : PORTFOLIO_ITEMS.filter(i => i.category === filter);
+
+            grid.innerHTML = filtered.map((item, idx) => `
+                <div onclick="openPortfolioLightbox(${idx}, '${filter}')" class="cursor-pointer group relative h-64 rounded-2xl overflow-hidden border border-zinc-800 hover:border-siddhGold transition shadow-lg">
+                    <img src="${item.image}" alt="${item.title}"
+                         onerror="this.src='https://placehold.co/700x500/111116/F59E0B?text=${encodeURIComponent(item.title)}'"
+                         class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex flex-col justify-end p-5">
+                        <span class="text-[10px] font-extrabold uppercase tracking-widest text-siddhGold">${item.categoryLabel}</span>
+                        <h3 class="font-heading font-bold text-lg text-white mt-0.5">${item.title}</h3>
+                        <p class="text-xs text-zinc-300 mt-1 flex items-center justify-between">
+                            <span><i class="fa-solid fa-sliders text-studioRed mr-1"></i> ${item.gear}</span>
+                            <span class="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center text-white group-hover:bg-studioRed transition">
+                                <i class="fa-solid fa-expand text-xs"></i>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Portfolio Filter Listeners
+        document.querySelectorAll('.portfolio-filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.portfolio-filter-btn').forEach(b => {
+                    b.classList.remove('bg-studioRed', 'text-white');
+                    b.classList.add('bg-zinc-900', 'text-zinc-300');
+                });
+                btn.classList.remove('bg-zinc-900', 'text-zinc-300');
+                btn.classList.add('bg-studioRed', 'text-white');
+                renderPortfolio(btn.getAttribute('data-filter'));
+            });
+        });
+
+        // Lightbox Modal Functions
+        function openPortfolioLightbox(index, filter) {
+            const filtered = filter === 'all' ? PORTFOLIO_ITEMS : PORTFOLIO_ITEMS.filter(i => i.category === filter);
+            const item = filtered[index];
+            const modal = document.getElementById('universalModal');
+            const content = document.getElementById('modalContent');
+
+            content.innerHTML = `
+                <div class="space-y-4">
+                    <img src="${item.image}" alt="${item.title}" class="w-full h-56 object-cover rounded-2xl border border-zinc-700">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-siddhGold">${item.categoryLabel}</span>
+                        <h3 class="font-heading font-bold text-xl text-white mt-1">${item.title}</h3>
+                        <p class="text-xs text-zinc-400 mt-1"><i class="fa-solid fa-video text-studioRed mr-1.5"></i> Production Setup: ${item.gear}</p>
+                    </div>
+                    <div class="pt-3 flex gap-3">
+                        <button onclick="addFromModal('${item.serviceToSelect}')" class="flex-1 bg-studioRed hover:bg-studioRedDark text-white font-bold py-3 rounded-xl text-sm transition">
+                            <i class="fa-solid fa-calendar-plus mr-1.5"></i> Add Setup to Booking
+                        </button>
+                        <button onclick="closeModal()" class="bg-zinc-800 hover:bg-zinc-700 text-zinc-300 font-semibold px-5 py-3 rounded-xl text-sm">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            `;
+            modal.classList.remove('hidden');
+        }
+
+        function addFromModal(serviceName) {
+            selectedBookingItems.add(serviceName);
+            renderBookingCheckboxes();
+            renderServices();
+            closeModal();
+            document.getElementById('book-now').scrollIntoView({ behavior: 'smooth' });
+            showToast(`Added "${serviceName}" to your booking form!`);
+        }
+
+        // Open Enlarged QR Modal for Siddh Bhumi Channel
+        function openQrModal(platform) {
+            const modal = document.getElementById('universalModal');
+            const content = document.getElementById('modalContent');
+            if (platform === 'instagram') {
+                content.innerHTML = `
+                    <div class="text-center space-y-4">
+                        <span class="bg-pink-600/20 text-pink-400 border border-pink-500/40 text-xs font-bold px-3 py-1 rounded-full">
+                            Instagram Official Account
+                        </span>
+                        <h3 class="font-heading font-black text-2xl text-white">@SIDDH_BHUMI</h3>
+                        <p class="text-xs text-zinc-400">Scan with your phone camera or click below to follow our Spiritual Journey updates from Sammed Shikherjee.</p>
+                        <div class="pt-2 flex flex-col sm:flex-row gap-3">
+                            <a href="https://instagram.com/SIDDH_BHUMI" target="_blank" rel="noopener noreferrer" class="flex-1 bg-gradient-to-r from-pink-600 to-purple-600 text-white font-bold py-3 rounded-xl text-sm">
+                                <i class="fa-brands fa-instagram mr-1.5"></i> Open @SIDDH_BHUMI
+                            </a>
+                            <button onclick="copyPhoneNumber('@SIDDH_BHUMI')" class="bg-zinc-800 text-white font-semibold px-4 py-3 rounded-xl text-sm">
+                                Copy Handle
+                            </button>
+                        </div>
+                    </div>
+                `;
+            } else {
+                content.innerHTML = `
+                    <div class="text-center space-y-4">
+                        <span class="bg-red-600/20 text-red-400 border border-red-500/40 text-xs font-bold px-3 py-1 rounded-full">
+                            Official YouTube Channel
+                        </span>
+                        <h3 class="font-heading font-black text-2xl text-siddhGold">SIDDH BHUMI CHANNEL</h3>
+                        <p class="text-xs text-zinc-400">Shikharjee, Madhuban • Subscribe and turn on notifications for live spiritual events and updates.</p>
+                        <div class="pt-2 flex flex-col sm:flex-row gap-3">
+                            <a href="https://www.youtube.com/@siddhbhumichannel" target="_blank" rel="noopener noreferrer" class="flex-1 bg-studioRed text-white font-bold py-3 rounded-xl text-sm">
+                                <i class="fa-brands fa-youtube mr-1.5"></i> Subscribe on YouTube
+                            </a>
+                            <button onclick="closeModal()" class="bg-zinc-800 text-white font-semibold px-4 py-3 rounded-xl text-sm">
+                                Done
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }
+            modal.classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('universalModal').classList.add('hidden');
+        }
+
+        // Social Action Interactions (Like, Comment, Share, Subscribe Bell)
+        let liked = false;
+        function triggerSocialAction(type) {
+            if (type === 'like') {
+                liked = !liked;
+                document.getElementById('likeCountBadge').textContent = liked ? '1.2K+1' : '1.2K';
+                showToast(liked ? 'Thank you for liking @SIDDH_BHUMI!' : 'Like updated.');
+            } else if (type === 'comment') {
+                showToast('Visit @SIDDH_BHUMI on Instagram to leave your blessings & comments!');
+            } else if (type === 'share') {
+                copyPhoneNumber(window.location.href);
+                showToast('Website & Siddh Bhumi link copied to clipboard to share!');
+            } else if (type === 'subscribe') {
+                showToast('🔔 Notification bell activated! Stay connected with Siddh Bhumi Channel.');
+            }
+        }
+
+        // Copy Helper (using execCommand for iframe compatibility)
+        function copyPhoneNumber(text) {
+            const tempInput = document.createElement('textarea');
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            showToast(`Copied: ${text}`);
+        }
+
+        // Booking Form Submission & WhatsApp Generator
+        function getBookingSummaryText() {
+            const name = document.getElementById('custName').value.trim() || 'Guest Customer';
+            const phone = document.getElementById('custPhone').value.trim() || 'Not provided';
+            const date = document.getElementById('eventDate').value || 'Upcoming Date';
+            const type = document.getElementById('eventType').value;
+            const location = document.getElementById('eventLocation').value.trim() || 'Sammed Shikherjee (Madhuban)';
+            const notes = document.getElementById('eventNotes').value.trim();
+            const services = Array.from(selectedBookingItems);
+
+            return {
+                name, phone, date, type, location, notes,
+                servicesList: services.length ? services.join(', ') : 'General Studio Inquiry'
+            };
+        }
+
+        function handleBookingSubmit(e) {
+            e.preventDefault();
+            const info = getBookingSummaryText();
+            const message = `*JAIN VINUS STUDIO - EVENT BOOKING INQUIRY*%0A` +
+                `----------------------------------%0A` +
+                `👤 *Name:* ${encodeURIComponent(info.name)}%0A` +
+                `📞 *Phone:* ${encodeURIComponent(info.phone)}%0A` +
+                `📅 *Event Date:* ${encodeURIComponent(info.date)}%0A` +
+                `🎉 *Event Type:* ${encodeURIComponent(info.type)}%0A` +
+                `📍 *Location:* ${encodeURIComponent(info.location)}%0A` +
+                `🎬 *Selected Services:* ${encodeURIComponent(info.servicesList)}%0A` +
+                (info.notes ? `📝 *Notes:* ${encodeURIComponent(info.notes)}%0A` : '') +
+                `----------------------------------%0A` +
+                `Please confirm availability & package quotation.`;
+
+            const whatsappUrl = `https://wa.me/916202486528?text=${message}`;
+            window.open(whatsappUrl, '_blank');
+            showToast('Opening WhatsApp inquiry to Jain Vinus Studio (+91 6202486528)...');
+        }
+
+        function previewConfirmation() {
+            const info = getBookingSummaryText();
+            const modal = document.getElementById('universalModal');
+            const content = document.getElementById('modalContent');
+
+            content.innerHTML = `
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between border-b border-zinc-800 pb-3">
+                        <div>
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-siddhGold">Jain Vinus Studio</span>
+                            <h3 class="font-heading font-bold text-lg text-white">Booking Inquiry Summary</h3>
+                        </div>
+                        <span class="bg-emerald-500/20 text-emerald-400 text-xs font-bold px-2.5 py-1 rounded-full">Ready to Send</span>
+                    </div>
+                    <div class="bg-zinc-950 border border-zinc-800 rounded-2xl p-4 text-xs space-y-2 text-zinc-300">
+                        <p><strong class="text-white">Client Name:</strong> ${info.name}</p>
+                        <p><strong class="text-white">Contact Number:</strong> ${info.phone}</p>
+                        <p><strong class="text-white">Event Date & Type:</strong> ${info.date} (${info.type})</p>
+                        <p><strong class="text-white">Event Venue:</strong> ${info.location}</p>
+                        <p><strong class="text-siddhGold">Selected Services:</strong> ${info.servicesList}</p>
+                        ${info.notes ? `<p><strong class="text-white">Notes:</strong> ${info.notes}</p>` : ''}
+                    </div>
+                    <p class="text-[11px] text-zinc-400">
+                        Studio Directors: <strong class="text-white">Shailendra Jain & Rishabh Jain</strong> (+91 6202486528, 8210892001)
+                    </p>
+                    <div class="flex gap-2.5 pt-1">
+                        <button onclick="document.getElementById('bookingForm').requestSubmit(); closeModal();" class="flex-1 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded-xl text-xs sm:text-sm">
+                            <i class="fa-brands fa-whatsapp mr-1"></i> Send via WhatsApp
+                        </button>
+                        <button onclick="closeModal()" class="bg-zinc-800 text-zinc-300 font-semibold px-4 py-3 rounded-xl text-xs sm:text-sm">
+                            Edit
+                        </button>
+                    </div>
+                </div>
+            `;
+            modal.classList.remove('hidden');
+        }
+
+        // Toast Helper
+        let toastTimer = null;
+        function showToast(msg) {
+            const box = document.getElementById('toastBox');
+            const text = document.getElementById('toastMessage');
+            text.textContent = msg;
+            box.classList.remove('hidden');
+            if (toastTimer) clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => {
+                box.classList.add('hidden');
+            }, 3400);
+        }
+
+        // Mobile Navigation Drawer Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileMenuIcon = document.getElementById('mobileMenuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            if (isHidden) {
+                mobileMenu.classList.remove('hidden');
+                mobileMenuIcon.classList.replace('fa-bars', 'fa-xmark');
+            } else {
+                mobileMenu.classList.add('hidden');
+                mobileMenuIcon.classList.replace('fa-xmark', 'fa-bars');
+            }
+        });
+
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenuIcon.classList.replace('fa-xmark', 'fa-bars');
+            });
+        });
+
+        // Initialize on Window Load
+        window.onload = function () {
+            // Default date input to tomorrow
+            const tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            document.getElementById('eventDate').value = tomorrow.toISOString().split('T')[0];
+
+            renderServices();
+            renderBookingCheckboxes();
+            renderPortfolio('all');
+        };
+    </script>
+</body>
+</html>
